@@ -1,8 +1,5 @@
 # stats.py A file that contains functions for analyzing the text
 
-# file path to book
-book = "/home/riki/bootdev/bootdev/Bookbot/books/frankenstein.txt"
-
 # read file
 def get_book(book):
     with open(book) as f:
@@ -12,7 +9,7 @@ def get_book(book):
 
 # count words
 def get_num_words(book_text):
-    with open(book) as f:
+    with open(book_text) as f:
         book_contents = f.read()
         word_count = len(book_contents.split())
         print(f"Found {word_count} total words")
